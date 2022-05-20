@@ -1,0 +1,398 @@
+{
+   "display_name": "IS_Residential_5282_Program", 
+   "identifier": "IS_Residential_5282_Program", 
+   "infiltration": {
+      "display_name": "IS_Residential_Infiltration", 
+      "identifier": "IS_Residential_Infiltration", 
+      "flow_per_exterior_area": 0.00029999999999999997, 
+      "type": "Infiltration", 
+      "schedule": {
+         "display_name": "IS_Residential_INFILTRATIONALLTIMESch", 
+         "identifier": "IS_Residential_INFILTRATIONALLTIMESch", 
+         "default_day_schedule": "IS_Residential_INFILTRATIONALLTIMESch_Day Schedule", 
+         "schedule_type_limit": {
+            "upper_limit": 1.0, 
+            "identifier": "Fractional", 
+            "lower_limit": 0.0, 
+            "numeric_type": "Continuous", 
+            "unit_type": "Dimensionless", 
+            "type": "ScheduleTypeLimit"
+         }, 
+         "type": "ScheduleRuleset", 
+         "day_schedules": [
+            {
+               "identifier": "IS_Residential_INFILTRATIONALLTIMESch_Day Schedule", 
+               "times": [
+                  [
+                     0, 
+                     0
+                  ]
+               ], 
+               "values": [
+                  1.0
+               ], 
+               "type": "ScheduleDay", 
+               "interpolate": false
+            }
+         ]
+      }
+   }, 
+   "lighting": {
+      "display_name": "IS_Residential_Lights", 
+      "identifier": "IS_Residential_Lights", 
+      "radiant_fraction": 0.32000000000000001, 
+      "visible_fraction": 0.25, 
+      "type": "Lighting", 
+      "return_air_fraction": 0.0, 
+      "watts_per_area": 5.0, 
+      "schedule": {
+         "display_name": "IS_Residential_LightsOnSch", 
+         "identifier": "IS_Residential_LightsOnSch", 
+         "default_day_schedule": "IS_Residential_LightsOnSch_Day Schedule", 
+         "schedule_type_limit": {
+            "upper_limit": 1.0, 
+            "identifier": "On/Off", 
+            "lower_limit": 0.0, 
+            "numeric_type": "Discrete", 
+            "unit_type": "Dimensionless", 
+            "type": "ScheduleTypeLimit"
+         }, 
+         "type": "ScheduleRuleset", 
+         "day_schedules": [
+            {
+               "identifier": "IS_Residential_LightsOnSch_Day Schedule", 
+               "times": [
+                  [
+                     0, 
+                     0
+                  ], 
+                  [
+                     7, 
+                     0
+                  ], 
+                  [
+                     8, 
+                     0
+                  ], 
+                  [
+                     16, 
+                     0
+                  ]
+               ], 
+               "values": [
+                  0.0, 
+                  1.0, 
+                  0.0, 
+                  1.0
+               ], 
+               "type": "ScheduleDay", 
+               "interpolate": false
+            }
+         ]
+      }
+   }, 
+   "electric_equipment": {
+      "display_name": "IS_Residential_Equipment", 
+      "identifier": "IS_Residential_Equipment", 
+      "radiant_fraction": 0.0, 
+      "latent_fraction": 0.0, 
+      "type": "ElectricEquipment", 
+      "watts_per_area": 4.0, 
+      "lost_fraction": 0.0, 
+      "schedule": {
+         "display_name": "IS_Residential_EquipmentSch", 
+         "identifier": "IS_Residential_EquipmentSch", 
+         "default_day_schedule": "IS_Residential_EquipmentSch_Day Schedule", 
+         "schedule_type_limit": {
+            "upper_limit": 1.0, 
+            "identifier": "Fractional", 
+            "lower_limit": 0.0, 
+            "numeric_type": "Continuous", 
+            "unit_type": "Dimensionless", 
+            "type": "ScheduleTypeLimit"
+         }, 
+         "type": "ScheduleRuleset", 
+         "day_schedules": [
+            {
+               "identifier": "IS_Residential_EquipmentSch_Day Schedule", 
+               "times": [
+                  [
+                     0, 
+                     0
+                  ]
+               ], 
+               "values": [
+                  1.0
+               ], 
+               "type": "ScheduleDay", 
+               "interpolate": false
+            }
+         ]
+      }
+   }, 
+   "setpoint": {
+      "display_name": "IS_Residential_Setpoints", 
+      "identifier": "IS_Residential_Setpoints", 
+      "heating_schedule": {
+         "display_name": "IS_Residential_HEATINGSETPOINTSch", 
+         "identifier": "IS_Residential_HEATINGSETPOINTSch", 
+         "default_day_schedule": "IS_Residential_HEATINGSETPOINTSch_Day Schedule", 
+         "schedule_type_limit": {
+            "upper_limit": {
+               "type": "NoLimit"
+            }, 
+            "identifier": "Temperature", 
+            "lower_limit": -273.14999999999998, 
+            "numeric_type": "Continuous", 
+            "unit_type": "Temperature", 
+            "type": "ScheduleTypeLimit"
+         }, 
+         "type": "ScheduleRuleset", 
+         "day_schedules": [
+            {
+               "identifier": "IS_Residential_HEATINGSETPOINTSch_Day Schedule", 
+               "times": [
+                  [
+                     0, 
+                     0
+                  ]
+               ], 
+               "values": [
+                  20.0
+               ], 
+               "type": "ScheduleDay", 
+               "interpolate": false
+            }
+         ]
+      }, 
+      "humidifying_schedule": {
+         "identifier": "IS_Residential_Setpoints_HumidSetp", 
+         "default_day_schedule": "IS_Residential_Setpoints_HumidSetp_Day Schedule", 
+         "schedule_type_limit": {
+            "upper_limit": 100.0, 
+            "identifier": "Humidity", 
+            "lower_limit": 0.0, 
+            "numeric_type": "Continuous", 
+            "unit_type": "Percent", 
+            "type": "ScheduleTypeLimit"
+         }, 
+         "type": "ScheduleRuleset", 
+         "day_schedules": [
+            {
+               "identifier": "IS_Residential_Setpoints_HumidSetp_Day Schedule", 
+               "times": [
+                  [
+                     0, 
+                     0
+                  ]
+               ], 
+               "values": [
+                  30.0
+               ], 
+               "type": "ScheduleDay", 
+               "interpolate": false
+            }
+         ]
+      }, 
+      "dehumidifying_schedule": {
+         "identifier": "IS_Residential_Setpoints_DeHumidSetp", 
+         "default_day_schedule": "IS_Residential_Setpoints_DeHumidSetp_Day Schedule", 
+         "schedule_type_limit": {
+            "upper_limit": 100.0, 
+            "identifier": "Humidity", 
+            "lower_limit": 0.0, 
+            "numeric_type": "Continuous", 
+            "unit_type": "Percent", 
+            "type": "ScheduleTypeLimit"
+         }, 
+         "type": "ScheduleRuleset", 
+         "day_schedules": [
+            {
+               "identifier": "IS_Residential_Setpoints_DeHumidSetp_Day Schedule", 
+               "times": [
+                  [
+                     0, 
+                     0
+                  ]
+               ], 
+               "values": [
+                  60.0
+               ], 
+               "type": "ScheduleDay", 
+               "interpolate": false
+            }
+         ]
+      }, 
+      "cooling_schedule": {
+         "display_name": "IS_Residential_COOLINGSETPOINT", 
+         "identifier": "IS_Residential_COOLINGSETPOINT", 
+         "default_day_schedule": "IS_Residential_COOLINGSETPOINT_Day Schedule", 
+         "schedule_type_limit": {
+            "upper_limit": {
+               "type": "NoLimit"
+            }, 
+            "identifier": "Temperature", 
+            "lower_limit": -273.14999999999998, 
+            "numeric_type": "Continuous", 
+            "unit_type": "Temperature", 
+            "type": "ScheduleTypeLimit"
+         }, 
+         "type": "ScheduleRuleset", 
+         "day_schedules": [
+            {
+               "identifier": "IS_Residential_COOLINGSETPOINT_Day Schedule", 
+               "times": [
+                  [
+                     0, 
+                     0
+                  ]
+               ], 
+               "values": [
+                  24.0
+               ], 
+               "type": "ScheduleDay", 
+               "interpolate": false
+            }
+         ]
+      }, 
+      "type": "Setpoint"
+   }, 
+   "ventilation": {
+      "schedule": {
+         "display_name": "IS_Residential_NightVentSch", 
+         "identifier": "IS_Residential_NightVentSch", 
+         "default_day_schedule": "IS_Residential_NightVentSch_Day Schedule", 
+         "schedule_type_limit": {
+            "upper_limit": 1.0, 
+            "identifier": "Fractional", 
+            "lower_limit": 0.0, 
+            "numeric_type": "Continuous", 
+            "unit_type": "Dimensionless", 
+            "type": "ScheduleTypeLimit"
+         }, 
+         "type": "ScheduleRuleset", 
+         "day_schedules": [
+            {
+               "identifier": "IS_Residential_NightVentSch_Day Schedule", 
+               "times": [
+                  [
+                     0, 
+                     0
+                  ], 
+                  [
+                     7, 
+                     0
+                  ], 
+                  [
+                     19, 
+                     0
+                  ]
+               ], 
+               "values": [
+                  1.0, 
+                  0.0, 
+                  1.0
+               ], 
+               "type": "ScheduleDay", 
+               "interpolate": false
+            }
+         ]
+      }, 
+      "type": "Ventilation", 
+      "identifier": "IS_ResidentialNightVent", 
+      "display_name": "IS_ResidentialNightVent"
+   }, 
+   "type": "ProgramType", 
+   "people": {
+      "display_name": "IS_Residential_People", 
+      "identifier": "IS_Residential_People", 
+      "radiant_fraction": 0.29999999999999999, 
+      "people_per_area": 0.040000000000000001, 
+      "latent_fraction": {
+         "type": "Autocalculate"
+      }, 
+      "occupancy_schedule": {
+         "display_name": "IS_Residential_OccupancySch", 
+         "identifier": "IS_Residential_OccupancySch", 
+         "default_day_schedule": "IS_Residential_OccupancySch_Day Schedule", 
+         "schedule_type_limit": {
+            "upper_limit": 1.0, 
+            "identifier": "Fractional", 
+            "lower_limit": 0.0, 
+            "numeric_type": "Continuous", 
+            "unit_type": "Dimensionless", 
+            "type": "ScheduleTypeLimit"
+         }, 
+         "type": "ScheduleRuleset", 
+         "day_schedules": [
+            {
+               "identifier": "IS_Residential_OccupancySch_Day Schedule", 
+               "times": [
+                  [
+                     0, 
+                     0
+                  ], 
+                  [
+                     8, 
+                     0
+                  ], 
+                  [
+                     16, 
+                     0
+                  ]
+               ], 
+               "values": [
+                  1.0, 
+                  0.0, 
+                  1.0
+               ], 
+               "type": "ScheduleDay", 
+               "interpolate": false
+            }
+         ]
+      }, 
+      "type": "People", 
+      "activity_schedule": {
+         "display_name": "IS_Residential_ActivitySch", 
+         "identifier": "IS_Residential_ActivitySch", 
+         "default_day_schedule": "IS_Residential_ActivitySch_Day Schedule", 
+         "schedule_type_limit": {
+            "upper_limit": {
+               "type": "NoLimit"
+            }, 
+            "identifier": "Activity Level", 
+            "lower_limit": 0.0, 
+            "numeric_type": "Continuous", 
+            "unit_type": "ActivityLevel", 
+            "type": "ScheduleTypeLimit"
+         }, 
+         "type": "ScheduleRuleset", 
+         "day_schedules": [
+            {
+               "identifier": "IS_Residential_ActivitySch_Day Schedule", 
+               "times": [
+                  [
+                     0, 
+                     0
+                  ], 
+                  [
+                     9, 
+                     0
+                  ], 
+                  [
+                     17, 
+                     0
+                  ]
+               ], 
+               "values": [
+                  80.0, 
+                  125.0, 
+                  80.0
+               ], 
+               "type": "ScheduleDay", 
+               "interpolate": false
+            }
+         ]
+      }
+   }
+}

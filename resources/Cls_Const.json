@@ -1,0 +1,278 @@
+{
+   "Cls_DgCl_Alum_140x95_3.12_.59_.59" : {
+      "display_name": "Cls_DgCl_Alum_140x95_3.12_.59_.59", 
+      "type": "WindowConstruction", 
+      "identifier": "Cls_DgCl_Alum_140x95_3.12_.59_.59", 
+      "materials": [
+         {
+            "shgc": 0.58999999999999997, 
+            "vt": 0.58999999999999997, 
+            "display_name": "Cls_DgCl_Alum_140x95_3.12_.59_.59", 
+            "identifier": "Cls_DgCl_Alum_140x95_3.12_.59_.59", 
+            "u_factor": 3.1200000000000001, 
+            "type": "EnergyWindowMaterialSimpleGlazSys"
+         }
+      ]
+   },
+   "Cls_SgCl_Alumin_140x95_5.84_.7_.68": {
+      "display_name": "Cls_SgCl_Alumin_140x95_5.84_.7_.68", 
+      "identifier": "Cls_SgCl_Alumin_140x95_5.84_.7_.68", 
+      "materials": [
+         {
+            "shgc": 0.69999999999999996, 
+            "vt": 0.68000000000000005, 
+            "display_name": "Cls_SgCl_Alum_140x95_5.84_.7_.68", 
+            "identifier": "Cls_SgCl_Alum_140x95_5.84_.7_.68", 
+            "u_factor": 5.7999999999999998, 
+            "type": "EnergyWindowMaterialSimpleGlazSys"
+         }
+      ], 
+      "layers": [
+         "Cls_SgCl_Alum_140x95_5.84_.7_.68"
+      ], 
+      "type": "WindowConstruction"
+   }, 
+   "Cls_Sg_Wind_Blinds": {
+      "display_name": "Cls_Sg_Wind_Blinds", 
+      "identifier": "Cls_Sg_Wind_Blinds", 
+      "control_type": "AlwaysOn", 
+      "shade_material": {
+         "beam_visible_reflectance_back": 0.5, 
+         "bottom_opening_multiplier": 0.5, 
+         "diffuse_visible_reflectance": 0.5, 
+         "slat_separation": 0.029999999999999999, 
+         "display_name": "Cls_Blinds", 
+         "beam_visible_reflectance": 0.5, 
+         "slat_orientation": "Horizontal", 
+         "type": "EnergyWindowMaterialBlind", 
+         "slat_conductivity": 0.14000000000000001, 
+         "diffuse_solar_reflectance_back": 0.5, 
+         "diffuse_solar_reflectance": 0.5, 
+         "distance_to_glass": 0.050000000000000003, 
+         "diffuse_visible_reflectance_back": 0.5, 
+         "identifier": "Cls_Blinds", 
+         "emissivity_back": 0.90000000000000002, 
+         "slat_width": 0.025000000000000001, 
+         "slat_angle": 90.0, 
+         "diffuse_solar_transmittance": 0.0, 
+         "beam_solar_reflectance": 0.5, 
+         "beam_visible_transmittance": 0.0, 
+         "beam_solar_reflectance_back": 0.5, 
+         "diffuse_visible_transmittance": 0.0, 
+         "emissivity": 0.90000000000000002, 
+         "top_opening_multiplier": 0.5, 
+         "left_opening_multiplier": 0.5, 
+         "slat_thickness": 0.0050000000000000001, 
+         "infrared_transmittance": 0.0, 
+         "right_opening_multiplier": 0.5, 
+         "beam_solar_transmittance": 0.0
+      }, 
+      "type": "WindowConstructionShade", 
+      "window_construction": {
+         "display_name": "Cls_SgCl_Alumin_140x95_5.84_.7_.68", 
+         "identifier": "Cls_SgCl_Alumin_140x95_5.84_.7_.68", 
+         "materials": [
+            {
+               "shgc": 0.69999999999999996, 
+               "vt": 0.68000000000000005, 
+               "display_name": "Cls_SgCl_Alum_140x95_5.84_.7_.68", 
+               "identifier": "Cls_SgCl_Alum_140x95_5.84_.7_.68", 
+               "u_factor": 5.7999999999999998, 
+               "type": "EnergyWindowMaterialSimpleGlazSys"
+            }
+         ], 
+         "layers": [
+            "Cls_SgCl_Alum_140x95_5.84_.7_.68"
+         ], 
+         "type": "WindowConstruction"
+      }, 
+      "shade_location": "Interior"
+   }, 
+   "Cls_Sg_Wind_Shades": {
+      "display_name": "Cls_Sg_Wind_Shades", 
+      "identifier": "Cls_Sg_Wind_Shades", 
+      "control_type": "AlwaysOn", 
+      "shade_material": {
+         "top_opening_multiplier": 0.5, 
+         "type": "EnergyWindowMaterialShade", 
+         "infrared_transmittance": 0.0, 
+         "visible_transmittance": 0.40000000000000002, 
+         "right_opening_multiplier": 0.5, 
+         "left_opening_multiplier": 0.5, 
+         "display_name": "Cls_Tris", 
+         "identifier": "Cls_Tris", 
+         "distance_to_glass": 0.050000000000000003, 
+         "airflow_permeability": 0.0, 
+         "solar_transmittance": 0.40000000000000002, 
+         "emissivity": 0.90000000000000002, 
+         "conductivity": 0.02, 
+         "thickness": 0.02, 
+         "solar_reflectance": 0.5, 
+         "bottom_opening_multiplier": 0.5, 
+         "visible_reflectance": 0.5
+      }, 
+      "type": "WindowConstructionShade", 
+      "window_construction": {
+         "display_name": "Cls_SgCl_Alumin_140x95_5.84_.7_.68", 
+         "identifier": "Cls_SgCl_Alumin_140x95_5.84_.7_.68", 
+         "materials": [
+            {
+               "shgc": 0.69999999999999996, 
+               "vt": 0.68000000000000005, 
+               "display_name": "Cls_SgCl_Alum_140x95_5.84_.7_.68", 
+               "identifier": "Cls_SgCl_Alum_140x95_5.84_.7_.68", 
+               "u_factor": 5.7999999999999998, 
+               "type": "EnergyWindowMaterialSimpleGlazSys"
+            }
+         ], 
+         "layers": [
+            "Cls_SgCl_Alum_140x95_5.84_.7_.68"
+         ], 
+         "type": "WindowConstruction"
+      }, 
+      "shade_location": "Interior"
+   }, 
+   "Cls_Ins_wall_3cm": {
+      "display_name": "Cls_Ins_wall_3cm", 
+      "identifier": "Cls_Ins_wall_3cm", 
+      "materials": [
+         {
+            "conductivity": 0.66700000000000004, 
+            "specific_heat": 1000.0, 
+            "density": 1.28, 
+            "thermal_absorptance": 0.90000000000000002, 
+            "thickness": 0.10000000000000001, 
+            "solar_absorptance": 0.69999999999999996, 
+            "visible_absorptance": 0.69999999999999996, 
+            "roughness": "Smooth", 
+            "type": "EnergyMaterial", 
+            "identifier": "Generic Wall Air Gap"
+         }, 
+         {
+            "conductivity": 0.34000000000000002, 
+            "specific_heat": 970.0, 
+            "density": 900.0, 
+            "thermal_absorptance": 0.90000000000000002, 
+            "thickness": 0.20000000000000001, 
+            "solar_absorptance": 0.69999999999999996, 
+            "visible_absorptance": 0.69999999999999996, 
+            "display_name": "Cls_ConcBlck", 
+            "roughness": "MediumRough", 
+            "type": "EnergyMaterial", 
+            "identifier": "Cls_ConcBlck"
+         }, 
+         {
+            "conductivity": 0.040000000000000001, 
+            "specific_heat": 1300.0, 
+            "density": 20.0, 
+            "thermal_absorptance": 0.90000000000000002, 
+            "thickness": 0.029999999999999999, 
+            "solar_absorptance": 0.69999999999999996, 
+            "visible_absorptance": 0.69999999999999996, 
+            "display_name": "Cls_Ins_Mat_3cm", 
+            "roughness": "MediumRough", 
+            "type": "EnergyMaterial", 
+            "identifier": "Cls_Ins_Mat_3cm"
+         }, 
+         {
+            "conductivity": 0.87, 
+            "specific_heat": 860.0, 
+            "density": 1800.0, 
+            "thermal_absorptance": 0.90000000000000002, 
+            "thickness": 0.02, 
+            "solar_absorptance": 0.69999999999999996, 
+            "visible_absorptance": 0.69999999999999996, 
+            "display_name": "Cls_Lime-Cement Mortar", 
+            "roughness": "MediumRough", 
+            "type": "EnergyMaterial", 
+            "identifier": "Cls_Lime-Cement Mortar"
+         }, 
+         {
+            "conductivity": 1.3999999999999999, 
+            "specific_heat": 900.0, 
+            "density": 2000.0, 
+            "thermal_absorptance": 0.90000000000000002, 
+            "thickness": 0.025000000000000001, 
+            "solar_absorptance": 0.69999999999999996, 
+            "visible_absorptance": 0.69999999999999996, 
+            "display_name": "Cls_Cement Mortar", 
+            "roughness": "MediumRough", 
+            "type": "EnergyMaterial", 
+            "identifier": "Cls_Cement Mortar"
+         }
+      ], 
+      "layers": [
+         "Cls_Cement Mortar", 
+         "Cls_Ins_Mat_3cm", 
+         "Generic Wall Air Gap", 
+         "Cls_ConcBlck", 
+         "Cls_Lime-Cement Mortar"
+      ], 
+      "type": "OpaqueConstruction"
+   }, 
+   "Cls_Wall_01": {
+      "display_name": "Cls_Wall_01", 
+      "identifier": "Cls_Wall_01", 
+      "materials": [
+         {
+            "conductivity": 0.34000000000000002, 
+            "specific_heat": 970.0, 
+            "density": 900.0, 
+            "thermal_absorptance": 0.90000000000000002, 
+            "thickness": 0.20000000000000001, 
+            "solar_absorptance": 0.69999999999999996, 
+            "visible_absorptance": 0.69999999999999996, 
+            "display_name": "Cls_ConcBlck", 
+            "roughness": "MediumRough", 
+            "type": "EnergyMaterial", 
+            "identifier": "Cls_ConcBlck"
+         }, 
+         {
+            "conductivity": 0.040000000000000001, 
+            "specific_heat": 1300.0, 
+            "density": 20.0, 
+            "thermal_absorptance": 0.90000000000000002, 
+            "thickness": 0.050000000000000003, 
+            "solar_absorptance": 0.69999999999999996, 
+            "visible_absorptance": 0.69999999999999996, 
+            "display_name": "Cls_Ins_5cm", 
+            "roughness": "MediumRough", 
+            "type": "EnergyMaterial", 
+            "identifier": "Cls_Ins_5cm"
+         }, 
+         {
+            "conductivity": 0.87, 
+            "specific_heat": 860.0, 
+            "density": 1800.0, 
+            "thermal_absorptance": 0.90000000000000002, 
+            "thickness": 0.02, 
+            "solar_absorptance": 0.69999999999999996, 
+            "visible_absorptance": 0.69999999999999996, 
+            "display_name": "Cls_Lime-Cement Mortar", 
+            "roughness": "MediumRough", 
+            "type": "EnergyMaterial", 
+            "identifier": "Cls_Lime-Cement Mortar"
+         }, 
+         {
+            "conductivity": 1.3999999999999999, 
+            "specific_heat": 900.0, 
+            "density": 2000.0, 
+            "thermal_absorptance": 0.90000000000000002, 
+            "thickness": 0.025000000000000001, 
+            "solar_absorptance": 0.69999999999999996, 
+            "visible_absorptance": 0.69999999999999996, 
+            "display_name": "Cls_Cement Mortar", 
+            "roughness": "MediumRough", 
+            "type": "EnergyMaterial", 
+            "identifier": "Cls_Cement Mortar"
+         }
+      ], 
+      "layers": [
+         "Cls_Cement Mortar", 
+         "Cls_Ins_5cm", 
+         "Cls_ConcBlck", 
+         "Cls_Lime-Cement Mortar"
+      ], 
+      "type": "OpaqueConstruction"
+   }
+}
