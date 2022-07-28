@@ -10,7 +10,7 @@ if __name__ == '__main__':
 
     # SETTINGS
     start_row = 2             # first row in csv file with input parameters for simulation
-    end_row = 20              # last row in csv file with input parameters for simulation
+    end_row = 2000              # last row in csv file with input parameters for simulation
     raws_in_batch = 3         # number of models to be sent to each worker at a time
     nb_process = 10           # number of workers
     chunk_size = 500          # number of simulations to be written to output csv file at a time (Data loss prevention)
