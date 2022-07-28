@@ -14,6 +14,7 @@ if __name__ == '__main__':
     raws_in_batch = 3         # number of models to be sent to each worker at a time
     nb_process = 10           # number of workers
     chunk_size = 500          # number of simulations to be written to output csv file at a time (Data loss prevention)
+    cop = 3
 
     # PATHS
     path_for_csv_inputs = 'resources\inputs.csv' 
@@ -21,7 +22,6 @@ if __name__ == '__main__':
     path_to_epw = 'resources\ISR_Beer.Sheva.401900_MSI\ISR_Beer.Sheva.401900_MSI.epw'
     energyplus_path = None    # None = C:\EnergyPlusV**-*-*
     simulation_folder = "simulation"
-    cop = 3
 
     # Create groups of ranges representing input CSV row numbers spited in batches and chunks
     ranges = []
