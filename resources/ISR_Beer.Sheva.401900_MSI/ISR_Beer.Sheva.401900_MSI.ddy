@@ -1,0 +1,67 @@
+Site:Location,
+  Beer Sheva City,
+  31.25,      !Latitude
+  34.8,     !Longitude
+  2.0,     !Time Zone
+  280.0;       !Elevation
+
+SizingPeriod:DesignDay,
+  99.6% Heating Design Day for Beer Sheva City,                !- Name
+  1,                                                           !- Month
+  21,                                                          !- Day of Month
+  WinterDesignDay,                                             !- Day Type
+  5.7,                                                         !- Max Dry-Bulb Temp {C}
+  0,                                                           !- Daily Dry-Bulb Temp Range {C}
+  DefaultMultipliers,                                          !- Dry-Bulb Temp Range Modifier Type
+  ,                                                            !- Dry-Bulb Temp Range Modifier Schedule Name
+  Wetbulb,                                                     !- Humidity Condition Type
+  5.7,                                                         !- Wetbulb/Dewpoint at Max Dry-Bulb {C}
+  ,                                                            !- Humidity Indicating Day Schedule Name
+  ,                                                            !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
+  ,                                                            !- Enthalpy at Maximum Dry-Bulb {J/kg}
+  ,                                                            !- Daily Wet-Bulb Temperature Range {deltaC}
+  98928.0,                                                     !- Barometric Pressure {Pa}
+  3.1,                                                         !- Wind Speed {m/s}
+  117.0,                                                       !- Wind Direction {Degrees; N=0, S=180}
+  No,                                                          !- Rain {Yes/No}
+  No,                                                          !- Snow on ground {Yes/No}
+  No,                                                          !- Daylight Savings Time Indicator {Yes/No}
+  ASHRAEClearSky,                                              !- Solar Model Indicator
+  ,                                                            !- Beam Solar Day Schedule Name
+  ,                                                            !- Diffuse Solar Day Schedule Name
+  ,                                                            !- ASHRAE Clear Sky Beam Optical Depth (taub)
+  ,                                                            !- ASHRAE Clear Sky Diffuse Optical Depth (taud)
+  0.0;                                                         !- Clearness (0.0 to 1.2)
+
+
+
+SizingPeriod:DesignDay,
+  0.4% Cooling Design Day for Beer Sheva City,                 !- Name
+  8,                                                           !- Month
+  21,                                                          !- Day of Month
+  SummerDesignDay,                                             !- Day Type
+  35.4,                                                        !- Max Dry-Bulb Temp {C}
+  11.5,                                                        !- Daily Dry-Bulb Temp Range {C}
+  DefaultMultipliers,                                          !- Dry-Bulb Temp Range Modifier Type
+  ,                                                            !- Dry-Bulb Temp Range Modifier Schedule Name
+  Wetbulb,                                                     !- Humidity Condition Type
+  24.4,                                                        !- Wetbulb/Dewpoint at Max Dry-Bulb {C}
+  ,                                                            !- Humidity Indicating Day Schedule Name
+  ,                                                            !- Humidity Ratio at Maximum Dry-Bulb {kgWater/kgDryAir}
+  ,                                                            !- Enthalpy at Maximum Dry-Bulb {J/kg}
+  ,                                                            !- Daily Wet-Bulb Temperature Range {deltaC}
+  98928.0,                                                     !- Barometric Pressure {Pa}
+  4.0,                                                         !- Wind Speed {m/s}
+  222.0,                                                       !- Wind Direction {Degrees; N=0, S=180}
+  No,                                                          !- Rain {Yes/No}
+  No,                                                          !- Snow on ground {Yes/No}
+  No,                                                          !- Daylight Savings Time Indicator {Yes/No}
+  ASHRAEClearSky,                                              !- Solar Model Indicator
+  ,                                                            !- Beam Solar Day Schedule Name
+  ,                                                            !- Diffuse Solar Day Schedule Name
+  ,                                                            !- ASHRAE Clear Sky Beam Optical Depth (taub)
+  ,                                                            !- ASHRAE Clear Sky Diffuse Optical Depth (taud)
+  1.0;                                                         !- Clearness (0.0 to 1.2)
+
+
+
