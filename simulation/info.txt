@@ -1,0 +1,1 @@
+This is the folder used to store files during simulation.
